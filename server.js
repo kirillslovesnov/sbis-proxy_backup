@@ -5,8 +5,9 @@ const app = express();
 app.use(express.json());
 
 // ✅ Настройки авторизации
-const LOGIN = process.env.SBIS_LOGIN || 'Slokir@ya.ru';
-const PASSWORD = process.env.SBIS_PASSWORD || 'Skv6022846';
+const LOGIN = process.env.LOGIN;
+const PASSWORD = process.env.PASSWORD;
+
 
 // 🔐 SID кэшируем на 10 минут
 let cachedSid = null;
