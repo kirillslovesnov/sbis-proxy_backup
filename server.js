@@ -1,77 +1,110 @@
-// server.js
-
 const express = require('express');
 const axios = require('axios');
-const bodyParser = require('body-parser');
 
 const app = express();
+app.use(express.json());
+
 const PORT = process.env.PORT || 10000;
 
-app.use(bodyParser.json());
+// ===== SID CACHE =====
+let cachedSid = null;
+let sidTime = 0;
+const SID_TTL = 10 * 60 * 1000; // 10 минут
 
-app.post('/get-tender', async (req, res) => {
-  const { tenderId } = req.body;
-
-  const sid = await getSid();
-  if (!sid) {
-    return res.status(500).json({ error: 'Ошибка авторизации в SBIS' });
-  }
-
-  try {
-    const response = await axios.post(
-      'https://zakupki.sbis.ru/contract/public/api/v2/Search/GetPurchase',
-      { purchaseId: tenderId },
-      { headers: { Cookie: 'sid=' + sid } }
-    );
-
-    res.json(response.data);
-  } catch (error) {
-    console.error('❌ Ошибка при получении данных о закупке:', error.message);
-    res.status(500).json({ error: 'Ошибка при получении данных о закупке' });
-  }
-});
-
-app.listen(PORT, () => {
-  console.log('🚀 Сервер запущен на http://localhost:' + PORT);
-});
-
-// 🔐 Получение SID через API СБИС
+// ===== AUTH =====
 async function getSid() {
   const LOGIN = process.env.LOGIN;
   const PASSWORD = process.env.PASSWORD;
 
-  console.log("🔐 LOGIN:", LOGIN);
-  console.log("🔐 PASSWORD:", PASSWORD);
+  console.log('🔐 LOGIN:', LOGIN);
 
+  if (!LOGIN || !PASSWORD) {
+    throw new Error('LOGIN или PASSWORD не заданы');
+  }
+
+  if (cachedSid && Date.now() - sidTime < SID_TTL) {
+    console.log('♻️ Используем кэшированный SID');
+    return cachedSid;
+  }
+
+  console.log('🔐 Авторизация в SBIS...');
+
+  const response = await axios.post(
+    'https://online.saby.ru/auth/service/',
+    {
+      jsonrpc: '2.0',
+      method: 'САП.Аутентифицировать',
+      params: {
+        login: LOGIN,
+        password: PASSWORD
+      },
+      id: '1'
+    },
+    {
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8'
+      }
+    }
+  );
+
+  const setCookie = response.headers['set-cookie'];
+  if (!setCookie) {
+    throw new Error('Set-Cookie не получен');
+  }
+
+  const match = setCookie[0].match(/sid=([^;]+)/);
+  if (!match) {
+    throw new Error('SID не найден в cookie');
+  }
+
+  cachedSid = match[1];
+  sidTime = Date.now();
+
+  console.log('✅ SID получен');
+  return cachedSid;
+}
+
+// ===== API =====
+app.post('/get-tender', async (req, res) => {
   try {
+    const { tenderId } = req.body;
+
+    if (!tenderId) {
+      return res.status(400).json({ error: 'Не передан tenderId' });
+    }
+
+    const sid = await getSid();
+
     const response = await axios.post(
-      'https://online.sbis.ru/auth/service/',
+      'https://online.saby.ru/tender-api/service/',
       {
         jsonrpc: '2.0',
-        protocol: 4,
-        method: 'СБИС.Аутентификация.Войти',
+        method: 'SbisTenderAPI.GetTenderListByID',
         params: {
-          login: LOGIN,
-          password: PASSWORD
+          TenderID: tenderId
         },
-        id: 1
+        id: '1'
       },
       {
-        headers: { 'Content-Type': 'application/json' }
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8',
+          'Cookie': `sid=${sid}`
+        }
       }
     );
 
-    const sid = response.data?.result?.sid;
-    if (!sid) {
-      console.error('❌ Ошибка авторизации: ❌ SID не найден');
-      console.error('Ответ от СБИС:', response.data);
-      return null;
-    }
-
-    console.log('✅ SID получен');
-    return sid;
-  } catch (error) {
-    console.error('❌ Ошибка при запросе:', error.response?.data || error.message);
-    return null;
+    res.json(response.data);
+  } catch (err) {
+    console.error('❌ Ошибка:', err.message);
+    res.status(500).json({ error: err.message });
   }
-}
+});
+
+// ===== HEALTH =====
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
+
+app.listen(PORT, () => {
+  console.log(`🚀 Сервер запущен на порту ${PORT}`);
+});
