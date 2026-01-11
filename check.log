@@ -1,0 +1,240 @@
+(node:34964) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+✅ Проверка завершена.
+(node:53625) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+✅ Проверка завершена.
+(node:77477) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+✅ Проверка завершена.
+(node:92448) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+⏳ Тендер 0162200011825003911: прошло -1528496 дней, пока рано.
+⏳ Тендер 0373200017425001222: прошло -596306 дней, пока рано.
+⏳ Тендер 0351200012225000190: прошло -1034324 дней, пока рано.
+⏳ Тендер 0124200000625005767: прошло -693460 дней, пока рано.
+⏳ Тендер 0373200053625000534: прошло -966358 дней, пока рано.
+⏳ Тендер 0809500000325003550: прошло -650757 дней, пока рано.
+⏳ Тендер 0365200005525000011_1: прошло -1696600 дней, пока рано.
+⏳ Тендер 0358200011525000073: прошло -912090 дней, пока рано.
+⏳ Тендер 0372100010625000906: прошло -814233 дней, пока рано.
+⏳ Тендер 200909241125100051: прошло -1188792 дней, пока рано.
+⏳ Тендер 0373200011425000947: прошло -1141490 дней, пока рано.
+⏳ Тендер 0348500002625000449_1: прошло -1114159 дней, пока рано.
+⏳ Тендер 0119200000125012640: прошло -778106 дней, пока рано.
+⏳ Тендер 0108500000425003162: прошло -1703964 дней, пока рано.
+⏳ Тендер 0373100056625000673_1: прошло -1848600 дней, пока рано.
+⏳ Тендер 0108500000425003198: прошло -927125 дней, пока рано.
+⏳ Тендер 0318300126725000412: прошло -858489 дней, пока рано.
+⏳ Тендер 0373200107425000199: прошло -364315 дней, пока рано.
+⏳ Тендер 0322200030125000085: прошло -377953 дней, пока рано.
+⏳ Тендер 0139200000125009804: прошло -1042206 дней, пока рано.
+⏳ Тендер 0351100002925001199: прошло -1066343 дней, пока рано.
+⏳ Тендер 0348500003825000037: прошло -2501807 дней, пока рано.
+⏳ Тендер 0817200000325011453: прошло -1013017 дней, пока рано.
+⏳ Тендер 0356500001425005640: прошло -1602884 дней, пока рано.
+⏳ Тендер 0351100002925001204: прошло -1139848 дней, пока рано.
+⏳ Тендер 0329200062225006147: прошло -1627083 дней, пока рано.
+⏳ Тендер 0372100049625001578: прошло -788851 дней, пока рано.
+⏳ Тендер 0324300031925000256: прошло -1485430 дней, пока рано.
+⏳ Тендер 0356200000525000065: прошло -688773 дней, пока рано.
+⏳ Тендер 0351200012225000109: прошло -1199413 дней, пока рано.
+⏳ Тендер 0351200012225000111: прошло -1258582 дней, пока рано.
+⏳ Тендер 0369200000525000391: прошло -675655 дней, пока рано.
+⏳ Тендер 0133200001725001599: прошло -1706947 дней, пока рано.
+⏳ Тендер 0306200010025000031: прошло -720580 дней, пока рано.
+⏳ Тендер 0131200001025005322: прошло -1656940 дней, пока рано.
+⏳ Тендер 0372100049625001577: прошло -742830 дней, пока рано.
+⏳ Тендер 0131200001025005406: прошло -2068691 дней, пока рано.
+⏳ Тендер 0157200000325000805: прошло -1132208 дней, пока рано.
+⏳ Тендер 0815500000525009565: прошло -1779815 дней, пока рано.
+⏳ Тендер 0348500003825000038: прошло -1369616 дней, пока рано.
+⏳ Тендер 0301000000225000525: прошло -889688 дней, пока рано.
+⏳ Тендер 0338200009825000434_1: прошло -936651 дней, пока рано.
+⏳ Тендер 0351100002925001216: прошло -364499 дней, пока рано.
+⏳ Тендер 0356200000525000067: прошло -1014570 дней, пока рано.
+⏳ Тендер 0830500000225002782: прошло -850272 дней, пока рано.
+⏳ Тендер 0318200072725000133: прошло -1576009 дней, пока рано.
+⏳ Тендер 0356500005625000162_1: прошло -850364 дней, пока рано.
+⏳ Тендер 0351200012225000113: прошло -1247686 дней, пока рано.
+⏳ Тендер 0801500001125001198: прошло -578197 дней, пока рано.
+⏳ Тендер 0318200065625000488: прошло -1245099 дней, пока рано.
+⏳ Тендер 0137200001225004263: прошло -943804 дней, пока рано.
+⏳ Тендер 0333200022825000154: прошло -572384 дней, пока рано.
+⏳ Тендер 0351300262125000252: прошло -816366 дней, пока рано.
+⏳ Тендер 0133200001725001616: прошло -1567090 дней, пока рано.
+⏳ Тендер 0373100078725000368: прошло -1364230 дней, пока рано.
+⏳ Тендер 0362400002225000172: прошло -1528922 дней, пока рано.
+⏳ Тендер 0124200000625003800: прошло -1292642 дней, пока рано.
+⏳ Тендер 0372100003425000563: прошло -1079066 дней, пока рано.
+⏳ Тендер 0373200024425001103: прошло -886462 дней, пока рано.
+⏳ Тендер 0119200000125013550: прошло -1271608 дней, пока рано.
+⏳ Тендер 0368200001325000024: прошло -1504968 дней, пока рано.
+⏳ Тендер 0368200001325000022: прошло -1459678 дней, пока рано.
+⏳ Тендер 0128200000125004118: прошло -1337202 дней, пока рано.
+⏳ Тендер 0318200020425000057: прошло -1414023 дней, пока рано.
+⏳ Тендер 0387200013525000058: прошло -796762 дней, пока рано.
+⏳ Тендер 0335200001025000293: прошло -1886646 дней, пока рано.
+⏳ Тендер 0373200024425001123: прошло -1036332 дней, пока рано.
+⏳ Тендер 0817200000325011903: прошло -214566 дней, пока рано.
+⏳ Тендер 0301200053525000033: прошло -249660 дней, пока рано.
+⏳ Тендер 0318300169225000182: прошло -1640108 дней, пока рано.
+⏳ Тендер 0372100010625000991: прошло -1740976 дней, пока рано.
+⏳ Тендер 0387200013525000059: прошло -483416 дней, пока рано.
+⏳ Тендер 0123200000325001406: прошло -387752 дней, пока рано.
+⏳ Тендер 0351300278325000222: прошло -717232 дней, пока рано.
+⏳ Тендер 0136500001125004579: прошло -889961 дней, пока рано.
+⏳ Тендер 0372100049625001741: прошло -738782 дней, пока рано.
+⏳ Тендер 0348200039825000147: прошло -938874 дней, пока рано.
+⏳ Тендер 0301200053525000034: прошло -257756 дней, пока рано.
+⏳ Тендер 0372200081125000076: прошло -634322 дней, пока рано.
+⏳ Тендер 0345200004025000715: прошло -663541 дней, пока рано.
+⏳ Тендер 0351300262125000258: прошло -1104846 дней, пока рано.
+⏳ Тендер 0190200000325008992: прошло -1258856 дней, пока рано.
+⏳ Тендер 0372200081125000078: прошло -1051521 дней, пока рано.
+⏳ Тендер 0373200099725001096: прошло -278668 дней, пока рано.
+⏳ Тендер 0131200001025005763: прошло -2049394 дней, пока рано.
+⏳ Тендер 0301000000225000557: прошло -951809 дней, пока рано.
+⏳ Тендер 0167200003425005511: прошло -1699522 дней, пока рано.
+⏳ Тендер 0136500001125004582: прошло -1343226 дней, пока рано.
+⏳ Тендер 0174500001125004109: прошло -1074531 дней, пока рано.
+⏳ Тендер 0351200012225000119: прошло -455476 дней, пока рано.
+⏳ Тендер 0128200000125004271: прошло -1873711 дней, пока рано.
+⏳ Тендер 0131200001025005799: прошло -1827722 дней, пока рано.
+⏳ Тендер 0870500019525000040_1: прошло -794967 дней, пока рано.
+⏳ Тендер 0372200000125000702: прошло -1880286 дней, пока рано.
+✅ Проверка завершена.
+(node:119834) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 36 дней, обновляем...
+✅ Проверка завершена.
+(node:140864) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 37 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 87 дней, обновляем...
+✅ Проверка завершена.
+(node:163484) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 38 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 88 дней, обновляем...
+✅ Проверка завершена.
+(node:181475) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 39 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 89 дней, обновляем...
+✅ Проверка завершена.
+(node:199496) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 40 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 90 дней, обновляем...
+✅ Проверка завершена.
+(node:219469) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 41 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 91 дней, обновляем...
+✅ Проверка завершена.
+(node:241648) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 42 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 92 дней, обновляем...
+✅ Проверка завершена.
+(node:267000) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 43 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 93 дней, обновляем...
+✅ Проверка завершена.
+(node:311880) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 44 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 94 дней, обновляем...
+✅ Проверка завершена.
+(node:341181) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 45 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 95 дней, обновляем...
+♻️ Тендер 0304200004025000051: прошло 20 дней, обновляем...
+✅ Проверка завершена.
+(node:363460) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 46 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 96 дней, обновляем...
+♻️ Тендер 0304200004025000051: прошло 21 дней, обновляем...
+✅ Проверка завершена.
+(node:379594) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+♻️ Тендер 0869200000225010810: прошло 47 дней, обновляем...
+♻️ Тендер 0102200001625001998: прошло 97 дней, обновляем...
+♻️ Тендер 0304200004025000051: прошло 22 дней, обновляем...
+✅ Проверка завершена.
+(node:16150) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+✅ Проверка завершена.
+(node:37820) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+✅ Проверка завершена.
+(node:56581) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+✅ Проверка завершена.
+(node:80961) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///root/sbis-proxy/check-updates.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /root/sbis-proxy/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+🔍 Проверка тендеров на обновление...
+✅ Проверка завершена.

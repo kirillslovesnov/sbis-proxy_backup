@@ -1,0 +1,89 @@
+import { google } from "googleapis";
+import fs from "fs";
+
+// 📄 ID твоей таблицы
+const SPREADSHEET_ID = "1gS46okY36V86bDdvUEaaH_mu3ZHcvFgJKr-dooPMh1s";
+const SHEET_NAME = "Tenders";
+
+// 🔑 Авторизация
+const auth = new google.auth.GoogleAuth({
+  keyFile: "./service-account.json",
+  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+});
+const sheets = google.sheets({ version: "v4", auth });
+
+/**
+ * Добавляет результаты тендера в Google Sheets
+ * @param {Object} tenderData — ответ от СБИС
+ */
+export async function appendTenderResultToExcel(tenderData) {
+  const tender = tenderData?.result?.tenders?.[0];
+  if (!tender) throw new Error("Неверный формат данных от СБИС");
+// Проверяем дубли по номеру тендера
+const existing = await sheets.spreadsheets.values.get({
+  spreadsheetId: SPREADSHEET_ID,
+  range: `${SHEET_NAME}!A:A`, // предполагаем, что в колонке A хранятся номера
+});
+
+const existingNumbers = (existing.data.values || []).flat();
+if (existingNumbers.includes(tender.number)) {
+  console.log(`⚠️ Тендер ${tender.number} уже существует — пропуск.`);
+  return;
+}
+
+  const values = [];
+
+  // 🧾 Основная строка тендера
+  const tenderRow = [
+    tender.number,
+    tender.name,
+    tender.status,
+    tender.type,
+    tender.region,
+    tender.initiator_name,
+    tender.organizer_name,
+    tender.price,
+    tender.publish_date,
+    tender.request_receiving_date,
+    tender.tender_date,
+    tender.lots?.[0]?.delivery_term || "",
+    tender.win_price,
+    tender.winner_name,
+    tender.winner_inn,
+    tender.smp || "",
+    tender.lots?.[0]?.contract_number || "",
+tender.tender_url
+    ? `=HYPERLINK("${tender.tender_url}"; "Открыть в ЕИС")`
+    : "",
+    "", "", "", "", "", ""
+  ];
+  values.push(tenderRow);
+
+  // 🧩 Вложенные строки (лоты и товары)
+  for (const lot of tender.lots || []) {
+    for (const item of lot.items || []) {
+      const lotRow = [
+       "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+        `→ ${item.name}`,                        // отступ и имя товара
+        item.price / item.quantity || "",        // цена за единицу
+        item.quantity || "",
+        lot.price || "",
+        item.ktru_code || "",
+        item.okpd2?.[0]?.code || "",
+      ];
+      values.push(lotRow);
+    }
+  }
+
+  // ✍️ Запись в таблицу
+  await sheets.spreadsheets.values.append({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `${SHEET_NAME}!A:Z`,
+    valueInputOption: "USER_ENTERED",
+    requestBody: {
+      values,
+    },
+  });
+
+  console.log(`✅ Тендер ${tender.number} добавлен в Google Sheets.`);
+}
